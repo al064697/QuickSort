@@ -62,15 +62,15 @@ def open_pdf():
 
 splash_screen = tk.Tk()
 splash_screen.title("Bienvenido")
-splash_screen.attributes('-fullscreen', True)
 
-tk.Label(splash_screen, text="Método de Ordenamiento Rápido (Quick Sort)", font=("Helvetica", 30)).pack(pady=20)
-tk.Label(splash_screen, text="Este método ordena un arreglo utilizando el algoritmo de ordenamiento rápido.", wraplength=800, font=("Helvetica", 20)).pack(pady=20)
+tk.Label(splash_screen, text="Método Quick Sort", font=("Helvetica", 30)).pack(pady=20)
+tk.Label(splash_screen, text="El Quick Sort (ordenamiento rápido) es un algoritmo de ordenamiento muy eficiente que utiliza el enfoque divide y vencerás. Es ampliamente utilizado por su rapidez en la mayoría de los casos, aunque su rendimiento puede degradarse si los datos no se dividen de manera balanceada.", wraplength=800, font=("Helvetica", 20)).pack(pady=20)
+
+btn_pdf = tk.Button(splash_screen, text="Conozca más sobre el método QuickSort", font=("Helvetica", 20), command=open_pdf)
+btn_pdf.pack(pady=20)
+
 tk.Label(splash_screen, text="Integrantes del equipo:", font=("Helvetica", 25)).pack(pady=20)
 tk.Label(splash_screen, text="1. Negron, Danna\n2. Patiño, Hugo\n3. Rios, Sebastian", font=("Helvetica", 20)).pack(pady=20)
-
-btn_pdf = tk.Button(splash_screen, text="Abrir PDF", font=("Helvetica", 20), command=open_pdf)
-btn_pdf.pack(pady=20)
 
 btn_proceed = tk.Button(splash_screen, text="Continuar", font=("Helvetica", 20), command=open_main_window)
 btn_proceed.pack(pady=20)
